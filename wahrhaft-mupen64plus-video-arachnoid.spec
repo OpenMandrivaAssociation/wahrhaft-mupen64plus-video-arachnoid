@@ -30,7 +30,7 @@ make %{?_smp_mflags} all -C projects/unix all COREDIR=%{_libdir}/ SHAREDIR=%{_da
 %install
 make -C projects/unix install PREFIX="%{_prefix}" DESTDIR="%{buildroot}" SHAREDIR=%{_datadir}/mupen64plus2/ LIBDIR=%{_libdir}/mupen64plus2/ 
 
-
+mv %{buildroot}/%{_libdir}/mupen64plus2/mupen64plus2/mupen64plus-video-arachnoid.so %{buildroot}/%{_libdir}/mupen64plus2/
 chmod -R 0755 %{buildroot}%{_libdir}
 
 
