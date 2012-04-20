@@ -4,7 +4,7 @@
 %define git_version ada2d63714fd
 
 Name:           wahrhaft-mupen64plus-video-arachnoid
-Version:        0.0-%{git_version}
+Version:        0.0.%{git_version}
 Release:        %mkrel 1
 Summary:        Arachnoid Plugin for mupen64plus
 Group:          Emulators
