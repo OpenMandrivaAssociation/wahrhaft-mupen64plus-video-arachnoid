@@ -43,7 +43,6 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%dir %{_datadir}/mupen64plus2
 %dir %{_libdir}/mupen64plus2
 %{_libdir}/mupen64plus2/mupen64plus-video-arachnoid.so
 
