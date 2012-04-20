@@ -33,7 +33,6 @@ make -C projects/unix install PREFIX="%{_prefix}" DESTDIR="%{buildroot}" SHAREDI
 
 chmod -R 0755 %{buildroot}%{_libdir}
 
-rmdir %{buildroot}/%{_libdir}/mupen64plus2/%{name}
 
 %post
 
