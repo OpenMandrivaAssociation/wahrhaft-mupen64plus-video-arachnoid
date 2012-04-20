@@ -1,10 +1,10 @@
 %define major 2
 %define libname %mklibname %{name} %{api} %{major}
 %define develname %mklibname %{name} -d
-
+%define git_version ada2d63714fd
 
 Name:           wahrhaft-mupen64plus-video-arachnoid
-Version:        ada2d63714fd
+Version:        0.0-%{git_version}
 Release:        %mkrel 1
 Summary:        Arachnoid Plugin for mupen64plus
 Group:          Emulators
@@ -21,7 +21,7 @@ An experimental plugin for mupen64plus to replace the rice plugin.
 
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{name}-%{git_version}
 
 %build
 export CFLAGS="%{optflags}"
@@ -33,7 +33,6 @@ make -C projects/unix install PREFIX="%{_prefix}" DESTDIR="%{buildroot}" SHAREDI
 
 chmod -R 0755 %{buildroot}%{_libdir}
 
-mv %{buildroot}/%{_libdir}/mupen64plus2/%{name}/mupen64plus*.so %{buildroot}/%{_libdir}/mupen64plus2/
 rmdir %{buildroot}/%{_libdir}/mupen64plus2/%{name}
 
 %post
