@@ -11,7 +11,7 @@ Group:          Emulators
 License:        GPLv2+
 Url:            http://code.google.com/p/mupen64plus/
 AutoReqProv:    on
-BuildRequires:  gcc-c++ libSDL-devel libpng-devel libsamplerate-devel 
+BuildRequires:  gcc-c++ libSDL-devel libpng-devel libsamplerate-devel libmupen64plus-devel
 BuildRequires:  freetype2-devel zlib-devel lirc-devel
 Source:         %{name}-%{version}.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
