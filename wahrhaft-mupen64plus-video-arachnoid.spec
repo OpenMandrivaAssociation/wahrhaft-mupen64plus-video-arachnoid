@@ -7,7 +7,7 @@ Version:	2.0.0
 Release:	2
 License:	GPLv2+
 Group:		Emulators
-Url:		http://code.google.com/p/mupen64plus/
+Url:		https://code.google.com/p/mupen64plus/
 Source0:	https://github.com/mupen64plus/mupen64plus-video-arachnoid/releases/download/%{version}/mupen64plus-video-arachnoid-src-%{version}.tar.gz
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(liblircclient0)
