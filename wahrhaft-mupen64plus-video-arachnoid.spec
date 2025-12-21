@@ -9,6 +9,7 @@ License:	GPLv2+
 Group:		Emulators
 Url:		https://code.google.com/p/mupen64plus/
 Source0:	https://github.com/mupen64plus/mupen64plus-video-arachnoid/releases/download/%{version}/mupen64plus-video-arachnoid-src-%{version}.tar.gz
+BuildRequires:	make
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(liblircclient0)
 BuildRequires:	pkgconfig(libpng)
